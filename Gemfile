@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "capistrano"
-gem "json"
+gem "json", ">= 1.7.7"
 gem "term-ansicolor"
 gem "escape"
 
