@@ -1,0 +1,5 @@
+/Config/database.php
+/tmp
+.DS_Store
+/View/.DS_Store
+/View/Elements/.DS_Store

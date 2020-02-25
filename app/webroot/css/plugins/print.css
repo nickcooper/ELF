@@ -1,0 +1,7 @@
+div#header{margin:0;}
+h1{font-size:1.5em;margin:0 0 1em 0;}
+h2{border:1px solid #999;padding:0.5em;margin:0 0 1em 0;}
+table{width:100%;}
+table tr td,table tr th{border-bottom:1px solid #999;}
+table tr th{text-align:left;}
+.noprint,#ss_holder,#shopping_cart_holder,#footer,[class^="cake"],[id^="cake"]{display:none;}

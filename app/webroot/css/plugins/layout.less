@@ -1,0 +1,280 @@
+/* 	EHSP
+	Layout Styles
+*/
+
+body {
+	background-color:#666;
+	color:#999;
+}
+
+// Wrappers
+div#wrapper {
+	background-color:#fff;
+	color:#666;
+}
+div#wrapper-header {
+	background-color:#fff;
+	color:#666;
+}
+div#wrapper-body {
+	background:#757575 url(../img/bg/admin-body-bg.png) fixed;
+	color:#fff;
+	padding:1em 0;
+	border-top:2px solid #6A6A6A;
+}
+div#wrapper-body-light {
+	background:#e6e6e6 url(../img/bg/admin-body-bg-white.png);
+	color:#666;
+	padding:1em 0;
+	border-top:2px solid #e6e6e6;
+}
+div#wrapper-body div#main-content { color:#666; }
+
+// Layout Styles
+div#header { margin:1.5em 0 0.5em 0; }
+div#header_content { position:relative; }
+div#body { padding-bottom:1.5em; }
+div#footer_wrapper {
+	padding:1em 0;
+	background:url(../img/bg/footer-fade-bg.png) repeat-x top;
+}
+
+// 'Public' site nav
+ul#nav_link_list {
+	margin:0;
+	padding:0;
+	float:left;
+	position:absolute;
+	right:0;
+	top:45px;
+}
+ul#nav_link_list li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:inline;
+	float:left;
+}
+ul#nav_link_list li a {
+	display:block;
+	float:left;
+	font-size:20px;
+	text-transform:uppercase;
+	letter-spacing:-1px;
+	color:#777;
+	text-decoration:none;
+	padding:6px 6px;
+	margin-left:10px; /*text-shadow:3px 3px 5px #d3d3d3;*/
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+ul#nav_link_list li a:hover {
+	color:#333;
+	background-color:#f2f2f2;
+	-moz-box-shadow:1px 1px 0px #e6e6e6;
+	-webkit-box-shadow:1px 1px 0px #e6e6e6;
+}
+ul#nav_link_list li a:active {
+	padding:7px 5px 5px 7px;
+	text-shadow:2px 2px 4px #d3d3d3;
+}
+ul#nav_link_list li a span {
+	display:block;
+	font-size:11px;
+	letter-spacing:0;
+}
+
+// Site title
+div#site_title h1 { }
+div#site_title h1 a {
+	display:block;
+	height:93px;
+	overflow:hidden;
+	text-indent:-9000px;
+	background:url(../img/graphics/site-title.png) no-repeat top left;
+}
+div#site_title h1.reduced a {
+	display:block; 
+	height:66px; 
+	background:url(../img/graphics/logo.png) no-repeat top left;
+}
+div#header_content div#idph_link p { height:34px; }
+div#header_content div#idph_link p a {
+	display:block;
+	float:right;
+	width:314px;
+	height:34px;
+	overflow:hidden;
+	text-indent:-4000px;
+	background:url(../img/graphics/byline.png) no-repeat top right;
+}
+div#login_box {
+	background:#fff url(../img/bg/login-box-bg.png) no-repeat top center;
+	color:#666;
+	border:2px solid #fff;
+	box-shadow:0 10px 30px #666;
+	-moz-border-radius:0.5em;
+	-webkit-border-radius:0.5em;
+}
+div#user_status {
+	padding:1em;
+	border-bottom:1px solid #e6e6e6;
+	border-right:1px solid #e6e6e6;
+	border-top:1px solid #ddd;
+	border-left:1px solid #ddd;
+	background: #f2f2f2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #efeded 20%, #f8f8f8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,#efeded), color-stop(100%,#f8f8f8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #efeded 20%,#f8f8f8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #efeded 20%,#f8f8f8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #efeded 20%,#f8f8f8 100%); /* IE10+ */
+	background: linear-gradient(top,  #efeded 20%,#f8f8f8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efeded', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-9 */
+	box-shadow:inset 0 0 8px 1px #e6e6e6;
+}
+
+
+// program selector
+div#ss_holder {
+	position:relative;
+	height:3.2em;
+	z-index:100;
+}
+div#ss_holder span.trigger {
+	display:block;
+	position:absolute;
+	top:0;
+	height:2.8em;
+	width:1.35em;
+	background:#e6e6e6 url(../img/graphics/tiny-arrow.png) no-repeat center center;
+	border:1px solid #ccc;
+	-moz-border-radius:0 3px 3px 0;
+	-webkit-border-radius:0 3px 3px 0;
+	-moz-box-shadow:0 0 5px #ccc;
+	-webkit-box-shadow:0 0 5px #ccc;
+	cursor:pointer;
+}
+ul#section_selector {
+	font-size:1.5em;
+	border:1px solid #ccc;
+	background-color:#f2f2f2;
+	margin:0;
+	padding:0;
+	float:left;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:500;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-box-shadow:0 0 5px #ccc;
+	-webkit-box-shadow:0 0 5px #ccc;
+}
+ul#section_selector li {
+	display:none;
+	list-style:none;
+	padding:0.2em 0.33em;
+	background-color:#f2f2f2;
+	white-space:nowrap;
+}
+ul#section_selector li.selected { display:block; }
+ul#section_selector li a {
+	display:block;
+	color:#999;
+	text-decoration:none;
+	padding:0 0.33em;
+}
+ul#section_selector li.selected a { color:#666; }
+ul#section_selector li a:hover {
+	color:#666;
+	text-decoration:underline;
+	background-color:#FFC;
+}
+ul#section_selector li.selected a:hover {
+	color:#666;
+	background-color:transparent;
+}
+
+
+// Section Nav
+ul#section_nav {
+	margin:0;
+	padding:0;
+}
+ul#section_nav li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+ul#section_nav li a {
+	display:block;
+	padding:2px 14px;
+	font-size:1.3em;
+	font-weight:bold;
+	text-decoration:none;
+}
+ul#section_nav li a span.count {
+	font-weight:normal;
+	font-size:0.8em;
+	position:relative;
+	top:-2px;
+}
+ul#section_nav li a:hover { color:#fff; }
+ul#section_nav li.selected a, ul#section_nav li.active a {
+	color:#fff;
+	border: solid #ccc;
+	border-width:1px 0 1px 1px;
+	padding:1px 14px 1px 13px;
+	background-color:rgba(240,240,240,0.2);
+	text-shadow:1px 1px 3px #666;
+	-moz-border-radius:3px 0 0 3px;
+	-webkit-border-radius:3px 0 0 3px;
+}
+ul#section_nav li a:active, ul#section_nav li a:focus {
+	outline:0 none;
+	text-decoration:underline;
+}
+ul#section_nav li ul { display:none; }
+ul#section_nav li ul li a, ul#section_nav li.selected ul li a {
+	padding:0.25em 0;
+	font-size:1.15em;
+	font-weight:normal;
+	border:none;
+	border-bottom:1px dotted #ccc;
+}
+ul#section_nav li ul li a.visible { font-weight:bold; }
+
+// Section
+div#section {
+	background-color:#fff;
+	color:#666;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+div#pre {
+	padding-top:1em;
+}
+div.stationary {
+	position:fixed;
+	width:inherit;
+}
+
+// footer
+#footer a, #footer a:visited {
+	color:#999;
+	text-shadow:1px 1px 0 #525252;
+	text-decoration:none;
+}
+#footer a:hover {
+	text-decoration:underline;
+	color:#ccc;
+}
+
+// decorations
+div#stripe {
+	height:8px;
+	margin:0;
+	padding:0;
+	zoom:1;
+}

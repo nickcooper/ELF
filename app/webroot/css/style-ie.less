@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*
+
+Enterprise Licensing
+====================
+
+Master IE Stylesheet
+
+*/
+
+// 1. Base 
+
+@import "plugins/blueprint/ie.css" screen;
+
+// 2. Custom stuff
+
+div#login_box {
+	border:2px solid #D0F4FF;
+}
+
+.box {
+	border-right:1px solid #e6e6e6;
+	border-bottom:1px solid #e6e6e6;
+}
+.cat_box {
+	border-right:1px solid #e6e6e6;
+	border-bottom:1px solid #e6e6e6;
+}
+input.button, a.button {
+	padding:6px 8px; 
+	border: solid #ccc; 
+	border-width:0 1px 1px 0;
+}
+input.button.cancel {
+	padding:7px 9px;
+}
+a.button {
+	padding:6px 8px; 
+	border: solid #A8AFAA; 
+	border-width:0 1px 1px 0;
+}
+
+/*these two are only for pre ie-8 browesr*/
+ul.button_select_list li {
+	zoom:1; 
+	display:inline;
+}
+ul.button_select_list li a {
+	zoom:1; 
+	display:inline;
+}

@@ -1,0 +1,66 @@
+<?php
+class PendingPaymentFixture extends CakeTestFixture
+{
+	public $fields = array(
+		'id' => array('type' => 'integer', 'key' => 'primary'),
+		'transaction_id' => array('type' => 'string', 'length' => 50, 'null' => true),
+		'account_id' => array('type' => 'integer', 'length' => 10, 'null' => false),
+		'payment_type_id' => array('type' => 'integer', 'length' => 10, 'null' => false),
+		'identifier' => array('type' => 'string', 'length' => 150, 'null' => false),
+		'total' => array('type' => 'float', 'length' => 5, 'default' => '0.00'),
+		'amount_paid' => array('type' => 'float', 'length' => 5, 'null' => true),
+		'payment_date' => 'datetime',
+		'payment_received_date' => 'datetime',
+		'local_transaction_id' => array('type' => 'string', 'length' => 50, 'null' => true),
+		'transaction_data' => array('type' => 'text', 'null' => true),
+		'created' => 'datetime',
+		'modified' => 'datetime'
+	);
+	public $records = array(
+		array(
+			'id' => 1,
+			'transaction_id' => '',
+			'account_id' => 1,
+			'payment_type_id' => 1,
+			'identifier' => '1025',
+			'total' => '60.00',
+			'amount_paid' => '60.00',
+			'payment_date' => '2013-06-24 16:44:45',
+			'payment_received_date' => '2013-06-24 16:44:45',
+			'local_transaction_id' => '20130624164445-554',
+			'transaction_data' => '12345',
+			'created' => '2013-06-24 16:44:45',
+			'modified' => '2013-06-24 16:44:45',
+		),
+		array(
+			'id' => 2,
+			'transaction_id' => '',
+			'account_id' => 1,
+			'payment_type_id' => 1,
+			'identifier' => '1026',
+			'total' => '30.00',
+			'amount_paid' => '30.00',
+			'payment_date' => '2013-06-24 16:44:45',
+			'payment_received_date' => '2013-06-24 16:44:45',
+			'local_transaction_id' => '20130624164415-243',
+			'transaction_data' => '23456',
+			'created' => '2013-06-24 16:44:45',
+			'modified' => '2013-06-24 16:44:45',
+		),
+		array(
+			'id' => 3,
+			'account_id' => 1,
+			'transaction_id' => '3452631',
+			'payment_type_id' => 1,
+			'identifier' => '1027',
+			'total' => '120.00',
+			'amount_paid' => '120.00',
+			'payment_date' => '2013-06-24 16:44:45',
+			'payment_received_date' => '2013-06-24 16:44:45',
+			'local_transaction_id' => '20130624164432-241',
+			'transaction_data' => '34567',
+			'created' => '2013-06-24 16:44:45',
+			'modified' => '2013-06-24 16:44:45',
+		),
+	);
+}

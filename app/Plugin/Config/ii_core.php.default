@@ -1,0 +1,43 @@
+<?php
+// Configure::load() expects there to be a $config variable in here.
+$config = array();
+
+// Base Url
+Configure::write('App.baseUrl', ''); // Example: https://test.iowai.gov
+Configure::write('App.base', ''); // Example: /ehsp
+
+// A&A settings
+Configure::write('AaAuth.host',          ''); // example: test.iowa.gov
+Configure::write('AaAuth.app_id',        ''); // example: DPH_EHP
+Configure::write('AaAuth.path',          '/entaa/'); // example: /entaa/
+Configure::write('AaAuth.bypass.mode',    false); // false or a specific valid A&A account to use = 'jason.robinson@iowaid'
+Configure::write('AaAuth.bypass.silent',  false); // turns on/off bypass mode warning - bypass mode must also be set to true
+
+// General Settings
+Configure::write('AaAuth.user.model', 			'Accounts.Account'); // location of user model
+Configure::write('AaAuth.user.add_method', 		'add'); // model method for inserting a new account, usually 'saveAll'
+Configure::write('AaAuth.user.edit_method', 	'edit'); // model method for updating a new account, usually 'saveAll'
+Configure::write('AaAuth.user.default_group', 	1); // default group id for newly created accounts (usually NOT an admin group)
+
+/**
+ * Silent Routes
+ * This plugin will surpress permission warnings for the following routes
+ * Useful for providing the login form before an action without screaming about permissions
+ */
+Configure::write('AaAuth.silent_routes', array('/admin'));
+
+/*AA Auth app logo
+ *
+ * URL to locally hosted image for AA Auth forms.
+ * Image appears at the top of AA Auth pages.
+ */
+if (! isCommandLine())
+{
+    Configure::write('AaAuth.app_logo',  sprintf('%s%s/img/graphics/logo.png', Configure::read('App.baseUrl'), Configure::read('App.base')));
+}
+
+/**
+ * Default user groups
+ */
+Configure::write('app.groups.super_admin', 'Super Admin');
+Configure::write('app.groups.default', 'Default Group');

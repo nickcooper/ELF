@@ -1,0 +1,171 @@
+/* CSS Document */
+
+/* 
+
+This file has all the unused styles in it for posterity.
+
+*/
+
+h3.handle {
+	background:url(../img/icons/handle-arrow-closed.png) no-repeat 12px 4px;
+	cursor:pointer;
+	padding-left:40px;
+}
+h3.handle.open { background:url(../img/icons/handle-arrow-open.png) no-repeat 12px 4px; }
+h3.handle a {
+	display:block;
+	color:#65CC81;
+	text-decoration:none;
+}
+h1 span.options, h2 span.options, h3 span.options, h4 span.options, h5 span.options {
+	font-weight:normal;
+	font-size:12px;
+}
+.section,
+.section_record { 
+	margin-bottom:1.5em;
+}
+.section_record {
+	border:2px solid #CEF0E9;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+.section_record .actions {
+	-moz-border-radius:4px 4px 0 0;
+	-webkit-border-radius:4px 4px 0 0;
+	border-radius:4px 4px 0 0;
+}
+.section_record .pad {
+	padding: 10px 10px 0 10px;
+}
+.separated {
+	border:2px solid #ddd;
+	padding:10px 10px 0 10px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	box-shadow:inset 0 0 8px 2px #eee;
+}
+.light_box {
+	background-color:#FFFFE1;
+	padding:10px;
+	margin-bottom:1em;
+}
+.action_box {
+	background-color:#CEF0E9;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+.action_box .button {
+	display:block;
+	text-align:left;
+	width:100%;
+}
+/* lists */
+ul.spaced li,
+ol.spaced li {
+	line-height:2em;
+}
+ul.line_list {
+	border-top:1px solid #e6e6e6;
+	margin-left:0;
+	margin-right:0;
+}
+ul.line_list li {
+	border-bottom:1px solid #e6e6e6;
+	margin:0;
+	padding:0.5em 5px;
+	list-style-position:inside;
+	color:#999;
+}
+ul.program_list {
+	font-size:1.2em;
+	margin-left:0;
+}
+ul.program_list li {
+	background:url(../img/icons/handle-arrow-closed.png) no-repeat 12px 10px;
+	list-style:none;
+	cursor:pointer;
+	padding:5px 0 5px 35px;
+	margin-left:0;
+}
+ul.program_list li a { display:block; }
+
+.form_section .section_status {
+	position:absolute;
+	top:13px;
+	right:15px;
+	background-color:#999;
+	font-size:11px;
+	color:#fff;
+	text-shadow:0 -1px 1px #777;
+	padding:2px 5px;
+	box-shadow:inset 0 0 4px #777;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;	
+}
+.form_section.incomplete {
+	border:5px solid #e7e798;
+	box-shadow:inset 0 0 0 1px #b8b846;
+}
+.form_section.incomplete h3 { color:#d24e50; }
+.form_section.error {
+	border:5px solid #FFBFBF;
+	box-shadow:inset 0 0 0 1px #d24e50;
+	border-radius: 0;
+}
+.form_section.error h3 { color:#d24e50; }
+.starred {
+	background:url(../img/icons/star.png) no-repeat left center;
+	padding-left:22px;
+	font-style:italic;
+}
+.questions_list { }
+.questions_list li { margin-bottom:1em; }
+.questions_list li ul, .questions_list li ol { margin-top:1em; }
+.questions_list li li { list-style:square; }
+
+form fieldset.serious {
+	border-top-color:#FF9D9D;
+	background:#fff url(../img/bg/fieldset-serious-bg.png) repeat-x top;
+}
+form fieldset.zebra > .form_item:nth-child(even), form fieldset.zebra > .section:nth-child(even) {
+	background: #E7F8EB;
+	border-top:1px solid #C5EAB1;
+}
+form fieldset.serious legend { color:#AA0000; }
+form .input_holder.selectables { padding:0.5em 0 0.5em 10px; }
+form .input_holder.checkboxes label {
+	display:inline-block;
+	padding:3px 9px 6px 4px;
+	font-size:1em;
+	margin-right:1em;
+	font-weight:normal;
+	cursor:pointer;
+	background-color:#fff;
+	border:1px solid #8BD9A0;
+}
+form .input_holder label:hover { border-color:#3cf; }
+form .input_holder .input_error {
+	display:inline-block;
+	background-color:#4dccc2;
+	font-weight:200;
+	color:#fff;
+	padding:0.3em 1em;
+	position:relative;
+	top:-0.1em;
+	left:0.4em;
+	text-shadow:1px 1px 2px rgba(0,0,0,0.3);
+}
+form .input_holder .input_error:after {
+	content: ' ';
+	display:block;
+	position:absolute;
+	top:0;
+	left:-1em;
+	width:0;
+	height:0;
+	border-width:1em 1em 1em 0;
+	border-style:solid;
+	border-color:transparent #4dccc2 transparent transparent;
+}
