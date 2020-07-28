@@ -9,7 +9,7 @@ GEM
       net-ssh-gateway (>= 1.1.0)
     escape (0.0.4)
     highline (1.6.15)
-    json (1.7.7)
+    json (2.3.0)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -25,5 +25,5 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   escape
-  json
+  json (>= 1.7.7)
   term-ansicolor
